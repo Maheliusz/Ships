@@ -101,7 +101,6 @@ namespace Ships
             if (error) return;
             shoot(x, y);
             checkWin();
-            application.setPlayer();
             shootButton.IsEnabled = false;
         }
 

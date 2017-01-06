@@ -25,8 +25,8 @@ namespace Ships
         }
         public void setPlayer()
         {
-            if (currentPlayer == 1) currentPlayer = 2;
-            else currentPlayer = 1;
+            if (currentPlayer == 1) this.currentPlayer = 2;
+            else this.currentPlayer = 1;
         }
         public short getCounter()
         {

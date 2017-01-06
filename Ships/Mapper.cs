@@ -19,8 +19,8 @@ namespace Ships
                 res += i.ToString();
                 for (int j = 0; j < 10; j++)
                 {
-                    if (shipMap[i,j] && shotMap[i,j]) res += "X";
-                    else if (shotMap[i,j] && !shipMap[i,j]) res += "O";
+                    if (shipMap[i,j] && shotMap[i,j]) res += " x";
+                    else if (shotMap[i,j] && !shipMap[i,j]) res += " o";
                     else res += " -";
                 }
                 res += "\n";
@@ -39,9 +39,9 @@ namespace Ships
                 res += i.ToString();
                 for (int j = 0; j < 10; j++)
                 {
-                    if (shipMap[i,j] && shotMap[i,j]) res += " X";
-                    else if (shotMap[i,j] && !shipMap[i,j]) res += " O";
-                    else if (shipMap[i,j]) res += " S";
+                    if (shipMap[i,j] && shotMap[i,j]) res += " x";
+                    else if (shotMap[i,j] && !shipMap[i,j]) res += " o";
+                    else if (shipMap[i,j]) res += " s";
                     else res += " -";
                 }
                 res += "\n";
